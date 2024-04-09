@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Background from './Components/Background'
 import Foreground from './Components/Foreground'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 function App() {
   const [count, setCount] = useState(0)
 
@@ -9,6 +10,7 @@ function App() {
     
        <Background/>
        <Foreground/>
+       <SpeedInsights/>
     </div>
   )
 }
